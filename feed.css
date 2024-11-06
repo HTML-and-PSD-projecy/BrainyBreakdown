@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #000;
+}
+
+.container {
+    max-width: 900px; /* Aligns with the article max width */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px;
+}
+
+.filters {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Centers the filters */
+    align-items: center;
+    gap: 10px; /* Adds space between buttons */
+}
+
+.count-filters {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background-color: #56b3fa;
+    color: white;
+    border: none;
+    padding: 8px 12px; /* Button padding */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4ca3e1; /* Change hover color slightly for better visibility */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center; /* Center the search bar container */
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    color: white;
+    background-color: #262626;
+    width: 100%; /* Full width of the container */
+    max-width: 700px; /* Set a max width for the search bar */
+    padding: 10px; /* Search bar padding */
+    border: 1px solid #56b3fa;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #56b3fa;
+}
+
+.article {
+    background: #262626;
+    border: 1px solid #56b3fa;
+    border-radius: 8px;
+    padding: 15px; /* Padding for articles */
+    margin-bottom: 20px;
+    max-width: 900px; /* Article width */
+    width: 100%; /* Ensures articles take the full width of max-width */
+    box-shadow: 0 1px 5px #56b3fa;
+    transition: transform 0.2s;
+    margin-left: auto; /* Centering the article */
+    margin-right: auto; /* Centering the article */
+}
+
+.article:hover {
+    transform: translateY(-2px);
+}
+
+.thumbnail {
+    width: 100%; /* Make the image take the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    max-height: 500px; /* Optional: limit the maximum height of the image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    transition: .3s;
+}
+.thumbnail:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #ffffff;
+}
+
+.interactions {
+    color: white;
+    margin: 10px 0; /* Reduced margin */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.interactions span {
+    margin-right: 15px;
+}
+
+.comments-section {
+    margin-top: 10px;
+    max-width: 100%; /* Ensure it doesn't exceed the article width */
+    overflow: hidden; /* Hide overflow or you can use overflow-y: auto; */
+}
+
+.comment-list {
+    margin-top: 10px;
+    border-top: 1px solid #56b3fa;
+    padding-top: 10px;
+    max-width: 100%; /* Ensure comment list doesn't exceed the width of its container */
+    overflow-y: auto; /* Enable scrolling if comments exceed the container height */
+    max-height: 150px; /* Optional: limit height for better layout */
+}
+
+.comment {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #303030;
+    color: #ffffff;
+    border-radius: 5px;
+    max-width: 100%; /* Ensure it doesn't exceed the width of its container */
+    word-wrap: break-word; /* Break long words to fit within the container */
+}
+
+.comment-input {
+    width: calc(100% - 10px); /* Full width minus padding */
+    max-width: 100%; /* Ensure it doesn't exceed the width of its container */
+    padding: 10px; /* Adjust padding as needed */
+    border: 1px solid #56b3fa; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #262626; /* Match the background */
+    color: #ffffff; /* Text color */
+    margin-bottom: 10px; /* Space below the input */
+}
